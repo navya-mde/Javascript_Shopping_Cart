@@ -1,31 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial scale=1.0">
-      <title>Document</title>
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
-    <!-- Header-->
-    <header>
-        <nav>
-            <a href="">Shopping Cart</a>
-        </nav>
-    <i class='bx bx-shopping-bag'></i>
-</header>
-  <!-- Shopping Section-->
-  <section>
-    <div>
-        <h2>Shopping Products</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 text-center text- p-4">
+                <h2>Tech Buzz 📱</h2>
+            </div>
+            <div class="col-md-1 text-left p-4">
+                <a href="#">Cart </a>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="../Images/schoolbag.png" alt="Image Not Found" length="500px" width="110px" />
-        <h3>School Bag</h3>
-        <span>₹500</span>
-        <i class='bx bx-shopping-bag'></i>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/samsung.jpg" length="200px" width="200px">
+                            <h4 >Samsung Galaxy A34 5G</h4>
+                            <span> ₹30,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text">
+                                        Samsung Galaxy A54 5G (Awesome Graphite, 8GB, 256GB Storage) | 50 MP No
+                                        Shake
+                                        Cam (OIS) | IP67 | Gorilla Glass 5 | Voice Focus | Without Charger
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <img src="../Images/iphone14.jpg" length="145px" width="145px">
+                            <h3>Apple iPhone 14</h3>
+                            <span> ₹69,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text1">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text1">
+                                        15.40 cm (6.1-inch) Super Retina XDR display
+                                        Vital safety technology — Crash Detection calls for help
+                                        Ceramic Shield and water resistance
+                                        A15 Bionic chip with 5-core GPU for lightning-fast performance.5G
+                                        cellular,iOS 16 offers even more ways to personalise
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/oneplus 11.jpg" length="125px" width="125px">
+                            <h3>OnePlus 11R 5G</h3>
+                            <span> 44,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text2">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text2">
+                                        6.7 Inches; 120 Hz Super Fluid AMOLED;
+                                        Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+
+                                        OxygenOS based on Android 13
+                                        Snapdragon 8+ Gen 1 Mobile Platform
+                                        16GB LPDDR5X RAM, 256GB UFS3.1 STORAGE
+                                        Battery & Charging: 5000 mAh with 100W SUPERVOOC
+                                        In-Display Fingerprint Sensor
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/realme11.jpg" length="110px" width="110px">
+                            <h3>Realme 11 Pro 5G</h3>
+                            <span> ₹25,500</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text3">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text3">
+                                        realme 11 Pro 5G (Sunrise Beige, 8GB RAM, 256GB Storage) | 17.02 cm (6.7
+                                        inch) Full HD+ Display | 200MP (OIS) + 8MP + 2MP | 32MP Front Camera
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+    <br>
+    <!-- <hr /> -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/iQOO Neo.jpg" length="130px" width="130px">
+                            <h3>iQOO Neo 7</h3>
+                            <span> ₹27,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text4">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text4">
+                                        iQOO Neo 7 5G (Interstellar Black, 8GB RAM, 128GB Storage) | 
+                                        Dimensity 8200, only 4nm Processor in The Segment| 
+                                        50% Charge in 10 mins| Motion Control & 90 FPS Gaming
+                                </button>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../Images/google.jpg" length="140px" width="140px">
+                            <h3>Google Pixel 7 5G</h3>
+                            <span> ₹50,990</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text5">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text5">
+                                        Google Pixel 7 5G (Obsidian, 8GB Ram 128GB Storage)
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/s22.jpg" length="120px" width="120px">
+                            <h3>Samsung Galaxy S23 Ultra 5G</h3>
+                            <span> ₹1,24,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text6">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text6">
+                                        Samsung Galaxy S23 Ultra 5G (Green, 12GB, 256GB Storage)
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/tech.jpg" length="140px" width="140px">
+                            <h3>Tecno Phantom X2 5G</h3>
+                            <span> ₹36,999</span>
+                            <div class="btn">
+
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text7">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text7">
+                                        Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World's 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera
+
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr /> -->
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/nothing.jpg" length="100px" width="100px">
+                            <h3>Nothing Phone 1 5G</h3>
+                            <span> ₹32,875</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text8">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text8">
+                                        Nothing Phone 1 5G Black 8GB RAM 128GB ROM | 6.55 inch 120Hz OLED Display | 50MP + 50MP Rear | 16MP Front Camera | Glyph Interface | Qualcomn Snapdragon 778G+ Processor
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../Images/z.jpg" length="138px" width="138px">
+                            <h3>Samsung Galaxy Flip3 </h3>
+                            <span> ₹47,850</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text9">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text9">
+                                        Samsung Galaxy Z Flip3 5G (Phantom Black, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/xao.jpg" length="125px" width="125px">
+                            <h3>Xiaomi 13 Pro</h3>
+                            <span>₹79,999</span>
+                            <div class="btn">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+
+
+
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text10">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text10">
+                                        Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage) | 
+                                        Leica Professional 50MP Triple Camera | 
+                                        Biggest Camera Sensor 1" IMX989 | SD 8 Gen 2
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-3">
+                            <img src="../Images/gt.jpg" length="110px" width="110px">
+                            <h3>Realme GT Neo 3</h3>
+                            <span> ₹27,150</span>
+                            <div class="btn">
+
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <button type="submit" class="btn btn-primary">Add to cart</button>
+                                <button class="btn btn-danger " data-bs-toggle="collapse" data-bs-target="#text11">
+                                    <h6> Read more</h6>
+                                    <div class="collapse" id="text11">
+                                        8 GB RAM | 128 GB ROM 17.02 cm (6.7 inch) Full HD+ Display
+                                        50MP + 8MP + 2MP | 16MP Front Camera
+                                        5000 mAh Lithium Ion Battery
+                                        Mediatek Dimensity 8100 Processor
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
