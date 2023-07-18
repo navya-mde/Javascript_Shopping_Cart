@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-  <body>
-    <!-- -----header------- -->
-    <header>
-      <nav>
-        <!-- <a href="">Shopping Cart</a> -->
-        <h2>Shopping Cart</h2>
-        <a href="../HTML/Cart.html"><i class="bx bxs-shopping-bag"></i></a>
-      </nav>
-    </header>
+</head>
+<body>
+  <header>
+    <div class="nav">
 
-    <div>
-      <h2 class="heading">Shopping Products</h2>
+      <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        COLLEGE BAGS
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+          <!-- <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        
+        </div> -->
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
     </div>
-    <section>
-      <div class="item">
-        <img src="../images/bag.png" alt="" />
-        <h3>Wildcraft bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$200</h4>
+  </header>
+  <div class="container">
+    <h2 class="title">Discover the Best Bags</h2>
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="../Images/bag.png" class="food-img">
+        </div>
+        <h2 class="food-title">Polyester</h2>
+        <span class="food-price">Rs.499</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag2.png" alt="" />
-        <h3>Polino bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$300</h4>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag3.png" class="food-img"></div>
+        <h2 class="food-title">Zipline</h2>
+        <span class="food-price">Rs.659</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag3.png" alt="" />
-        <h3>Adidas bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$206</h4>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag4.png" class="food-img"></div>
+        <h2 class="food-title">Adidas</h2>
+        <span class="food-price">Rs.1080</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag4.png" alt="" />
-        <h3>Nike bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$270</h4>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag5.png" class="food-img"></div>
+        <h2 class="food-title">Puma</h2>
+        <span class="food-price">Rs.890</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag5.png" alt="" />
-        <h3>Pole star bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$200</h4>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag6.png" class="food-img"></div>
+        <h2 class="food-title">Fast track</h2>
+        <span class="food-price">Rs.878</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag6.png" alt="" />
-        <h3>Wildcraft bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$500</h4>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag7.png" class="food-img"></div>
+        <h2 class="food-title">Arena</h2>
+        <span class="food-price">Rs.1023</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag7.png" alt="" />
-        <h3>Puma bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$300</h4>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag8.png" class="food-img"></div>
+        <h2 class="food-title">Auxter</h2>
+        <span class="food-price">Rs.650</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="item">
-        <img src="../images/bag8.png" alt="" />
-        <h3>Adobe bag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>$204</h4>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../Images/bag2.png" class="food-img"></div>
+        <h2 class="food-title">Adisa</h2>
+        <span class="food-price">Rs.720</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-    </section>
-    <script src="../JS/script.js"></script>
-  </body>
+  
+
+
+
+
+    </div>
+  </div>
+  <script src="../JS/Script.js"></script>
+</body>
 </html>
